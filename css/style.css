@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -182,7 +183,7 @@
 }
 
 .blog-post .card a{
-  color: orange;
+  color: red;
 }
 
 .blog-post .card .card2{
@@ -441,7 +442,7 @@
 .data .push{
   width: 20%;
   height: 100%;
-  background-color:#FFB400;
+  background-color:red;
   border-radius: 20px;
   cursor: pointer;
   text-align: center;
@@ -506,7 +507,7 @@
 .foot2 .end .top{
   margin-left: 40px;
   border-radius: 0;
-  background-color: #FFB400;
+  background-color: red;
   padding-left: 5px;
   color: white;
   scroll-behavior: smooth;
@@ -517,6 +518,211 @@
   opacity: 0.7;
   margin-top: 40px;
 }
+
+
+/* city */
+
+.city{
+  height: 100px;
+  background-color: #780000;
+  opacity: ;
+ position: relative;
+
+}
+
+
+
+.city .cont{
+   top: 50%;
+   left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  /*text-align: center;*/
+  height: 100px;
+}
+
+.city .cont h2{
+  color: white;
+  font-weight: bold;
+}
+
+/*.cities*/
+
+.cities{
+    height:230px;
+    background-color: #780000;
+}
+
+.cities .row{
+  margin: 0 40px 0 40px;
+}
+
+.cities .cont{
+  height: 190px;
+  background-color: white;
+}
+
+.cities .cont:hover{
+  background-color: #E8E8E8;
+}
+
+.cities .cont:hover  .location h3 , .cities .cont:hover .location p{
+  text-decoration: underline;
+  color: red;
+}
+
+.cities .cont img{
+  top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      display: block;
+}
+
+.cities .cont .location{
+    
+    position: absolute;
+    top: 70%;
+    width: 100%;
+}
+
+.cities .cont .location h3{
+
+  margin: 20px 0 0 0;
+  color: black;
+  font-size: 19px;
+  font-weight: bold;
+  transform: translateX(-40%);
+  left: 40%;
+  position: absolute;
+}
+
+.cities .cont .location p{
+  margin: 0;
+  color: black;
+   transform: translateX(-40%);
+  left: 40%;
+  position: absolute;
+
+}
+
+/*navbar*/
+
+.navbar{
+  height: 75px;
+  border-radius: none !important;
+  background-image: none;
+  background-color: #151728;
+  z-index: 99;
+  margin-bottom: 0;
+}
+
+.customclr{
+  color: white !important;
+}
+.cip{
+  margin-top: 13px;
+}
+
+.custom{
+  margin-left: 25%;
+}
+
+.custom a{
+  color: white !important;
+}
+
+ .navbar-inverse{
+    border-radius: 0px !important;
+  }
+
+
+  /*header*/
+
+  .header{
+    height: 500px;
+    background-image: url('https://images.unsplash.com/photo-1563339007-6914941198b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGF1ZGl8ZW58MHwwfDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .header::before {
+    background-color: #080E1E;
+    opacity: 0.3;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.header .model{
+  height: 500px;
+ 
+}
+
+.header .model #cx{
+  color: white;
+  font-size: 45px;
+   top: 30%;
+  left: 50%;
+  transform: translate(-50%,-30%);
+  position: absolute;
+}
+
+.header .model h2{
+  color: white;
+  font-size: 45px;
+   top: 43%;
+  left: 50%;
+  transform: translate(-50%,-43%);
+  position: absolute;
+}
+
+.header .model h5{
+  color: white;
+  
+   top: 53%;
+  left: 50%;
+  transform: translate(-50%,-55%);
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header .model #cx2{
+  color: white;
+    
+   top: 57%;
+  left: 50%;
+  transform: translate(-50%,-57%);
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header .model #book{
+
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+    position: absolute;
+    font-family: 'Roboto';
+    width: 240px;
+    height: 40px;
+    background-color: #EA001E;
+    
+    text-align: center;
+}
+
+.header .model #book h4{
+  top: 15%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-15%);
+  color: white;
+}
+
+
 @media (max-width: 768px){
     .choose .content .material{
       width: 100%;
@@ -562,4 +768,28 @@
   .brands .brands-content .brands-material #h5::before, #h5::after{
     left: 23%;
   }
+
+  .cities{
+    height: 1194px;
+    margin-top: -1px;
+
+  }
+
+  .cities .cont{
+    margin-bottom: 6px;
+  }
+
+  .city .cont{
+    width: 84%;
+
+  }
+
+  .city{
+    height: 175px;
+  }
+
+  .cip{
+    background-color: #161829;
+  }
+
 }
